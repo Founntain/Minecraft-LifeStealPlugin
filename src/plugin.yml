@@ -1,0 +1,11 @@
+name: LifeStealPlugin
+main: de.founntain.lifestealplugin.LifeStealPlugin
+version: 1.0
+api-version: 1.17
+commands:
+  resethearts:
+    description: Resets the hearts of all players on the server
+    usage: /resethearts
+  lsreset:
+    description: Resets the hearts of a player
+    usage: /lsreset <player>
