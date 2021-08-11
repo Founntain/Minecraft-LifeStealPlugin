@@ -22,7 +22,7 @@ public class OnPlayerDeathEvent implements Listener {
             if(player.getKiller() == null) return;
 
             double maxHealth = player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getBaseValue();
-            double newMaxHealth = maxHealth - 1;
+            double newMaxHealth = maxHealth - 2;
 
             if(newMaxHealth <= 2){
                 player.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(2);
@@ -33,7 +33,7 @@ public class OnPlayerDeathEvent implements Listener {
             Player killer = player.getKiller();
             double killerMaxHealth = killer.getAttribute(Attribute.GENERIC_MAX_HEALTH).getBaseValue();
 
-            killer.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(killerMaxHealth + 1);
+            killer.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(killerMaxHealth + 2);
         }
     }
 }
