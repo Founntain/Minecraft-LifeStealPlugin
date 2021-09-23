@@ -6,6 +6,17 @@ commands:
   resethearts:
     description: Resets the hearts of all players on the server
     usage: /resethearts
+    permission: lifestealplugin.resethearts
+    permission-message: You do not have permission to use this command.
   lsreset:
     description: Resets the hearts of a player
     usage: /lsreset <player>
+    permission: lifestealplugin.lsreset
+    permission-message: You do not have permission to use this command.
+permissions:
+  lifestealplugin.resethearts:
+    description: Allows you to use the command /resethearts
+    default: op
+  lifestealplugin.lsreset:
+    description: Allows you to use the command /lsreset
+    default: op
